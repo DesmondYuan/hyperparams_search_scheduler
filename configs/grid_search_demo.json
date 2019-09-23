@@ -1,0 +1,22 @@
+{
+  "search_space": {
+    "metadata_path": ["data/demo_data.json"],
+    "train":[true],
+    "dev":[true],
+    "test":[true],
+    "epochs":[20],
+    "num_workers":[0],
+    "cuda":[true],
+    "model_name": ["bow"],
+    "hidden_dim":[128, 256],
+    "embedding_dim":[128, 256],
+    "optimizer": ["adam"],
+    "batch_size":[64],
+    "init_lr":[1e-03, 1e-2, 1e-1],
+    "weight_decay":[1e-03],
+    "max_batches_per_train_epoch": [1000],
+    "max_batches_per_dev_epoch": [1000],
+    "pad_size": [5]
+  },
+  "available_gpus": [0]
+}
